@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #ffd1dc, #e0c3fc);
+  color: #444;
+  text-align: center;
+}
+
+/* Music Button */
+.music-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background: white;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: fadeIn 2s ease;
+}
+
+.title {
+  font-size: 3rem;
+  animation: bounce 1.5s infinite alternate;
+}
+
+.name {
+  font-size: 2.6rem;
+  color: #fff;
+  margin: 10px 0;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.replay-btn {
+  padding: 10px 25px;
+  border: none;
+  background: #fff;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+}
+
+.message p {
+  max-width: 650px;
+  margin: auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Gallery */
+.photos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.photos img {
+  width: 250px;
+  border-radius: 18px;
+  transition: transform 0.3s;
+}
+
+.photos img:hover {
+  transform: scale(1.05);
+}
+
+/* Quote */
+.quote {
+  font-size: 1.3rem;
+  font-style: italic;
+  color: #fff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-10px); }
+}
