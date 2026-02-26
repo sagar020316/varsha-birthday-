@@ -2,66 +2,62 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Happy Birthday, Varsha 🎂</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Varsha 🎂</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="sparkle-layer" aria-hidden="true"></div>
 
-  <header class="hero card">
-    <p class="eyebrow">A special page made with love 💖</p>
-    <h1>Happy Birthday <span>Varsha</span> 🎉</h1>
-    <p class="hero-message">
-      To my sweetest sister — may your day be filled with cake, laughter,
-      and all the little moments that make your heart smile.
+  <!-- Background Music -->
+  <audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Music Button -->
+  <button class="music-btn" onclick="toggleMusic()">🎵</button>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1 class="title">🎂 Happy Birthday 🎂</h1>
+    <h2 class="name">Varsha 💕</h2>
+    <p class="subtitle">
+      To my cutest Thangachi,  
+      today is all about you 🌸
     </p>
+    <button class="replay-btn" onclick="replayAnimation()">Replay ✨</button>
+  </section>
 
-    <div class="hero-actions">
-      <button class="btn btn-primary" id="musicBtn" type="button" onclick="toggleMusic()">Play Music 🎵</button>
-      <button class="btn" type="button" onclick="replayConfetti()">Celebrate Again ✨</button>
+  <!-- Message Section -->
+  <section class="message">
+    <h2>For My Thangachi 💌</h2>
+    <p>
+      Happy Birthday Varsha 🥰  
+      You are not just my sister,  
+      you are my smile, my happiness, and my forever little star ✨  
+      <br><br>
+      May your life be filled with laughter, love, and endless dreams.  
+      Never forget how special you are to me 💖  
+      Always stay cute, strong, and confident.
+    </p>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery">
+    <h2>Our Sweet Memories 📸</h2>
+    <div class="photos">
+      <img src="https://via.placeholder.com/250" alt="memory">
+      <img src="https://via.placeholder.com/250" alt="memory">
+      <img src="https://via.placeholder.com/250" alt="memory">
     </div>
+  </section>
 
-    <audio id="bgMusic" loop>
-      <source src="music.mp3" type="audio/mpeg" />
-    </audio>
-  </header>
-
-  <main>
-    <section class="card message" id="wish">
-      <h2>My Birthday Wish for You 💌</h2>
-      <p>
-        Dear Varsha, you are truly one of the brightest parts of my life.
-        Thank you for your kindness, your smile, and the joy you bring wherever you go.
-      </p>
-      <p>
-        I wish you confidence when you doubt yourself, strength when life feels hard,
-        and endless reasons to laugh every single day. Keep shining, little star. 🌟
-      </p>
-    </section>
-
-    <section class="card highlights" aria-label="Birthday highlights">
-      <h2>Birthday Vibes 🎈</h2>
-      <div class="chips">
-        <span>🎂 Cake Time</span>
-        <span>📸 Memory Making</span>
-        <span>💃 Happy Dance</span>
-        <span>🌷 New Dreams</span>
-      </div>
-    </section>
-
-    <section class="card quote">
-      <blockquote>
-        “A sister is both your mirror — and your opposite.”
-      </blockquote>
-      <p>May this year bring you everything your heart quietly hopes for.</p>
-    </section>
-  </main>
-
-  <canvas id="confettiCanvas" aria-hidden="true"></canvas>
+  <!-- Quote Section -->
+  <section class="quote">
+    <p>
+      “A sister is a little bit of childhood  
+      that can never be lost.” 🌷
+    </p>
+  </section>
 
   <script src="script.js"></script>
 </body>
